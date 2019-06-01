@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Air Quality Index</title>
+  </head>
+  <body>
+        <section id="hero">
+                <div class="container search_wrapper">
+        
+                    <div class="row">
+        
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 searchbox">
+                            
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 search_input">
+                                <input type="search" id="address" class="form-control" placeholder="Search any location">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 search_seperator">or</div>
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 search_button">
+                                <button onclick="getLocation()" class="form-control btn btn-sm btn-primary">Show my current air quality</button>
+                            </div>
+        
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 maq_card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="card-title aqi"></h1>
+                                    <h3 class="card-subtitle mb-2 text-muted description"></h3>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </section>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then places.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/places.js@1.16.4"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
